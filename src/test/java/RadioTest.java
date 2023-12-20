@@ -58,7 +58,7 @@ public class RadioTest {
 
     @Test
     public void increaseRealVolume() {
-        RadioService service = new RadioService();
+        Radio service = new Radio();
         Radio radioVolume = new Radio();
         radioVolume.setrealSoundVolume(15);
         int expected = 16;

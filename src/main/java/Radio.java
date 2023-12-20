@@ -36,6 +36,7 @@ public class Radio {
         if (realSoundVolume < 100) {
             realSoundVolume = realSoundVolume + 1;
         }
+
     }
 
     public int increaseStation() {
