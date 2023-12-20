@@ -22,15 +22,48 @@ public class Radio {
     }
 
     public void setrealSoundVolume(int newRealsoundVolume) {
-        if (newRealsoundVolume > 100) {
+        if (realSoundVolume > 100) {
             return;
         }
-        if (newRealsoundVolume < 0) {
+        if (realSoundVolume < 0) {
             return;
         }
-      realSoundVolume = newRealsoundVolume;
+        realSoundVolume = newRealsoundVolume;
 
     }
 
+    public void increaseVolume() {
+        if (realSoundVolume < 100) {
+            realSoundVolume = realSoundVolume + 1;
+        }
+    }
 
+    public int increaseStation() {
+        int increaseRealStation = 0;
+        if (increaseRealStation < 9) {
+            increaseRealStation = increaseRealStation + 1;
+        }
+        return increaseRealStation;
+    }
+
+    public int nextStation() {
+        int newStation = 0;
+        if (newStation > 9) {
+            newStation = 0;
+        }
+        if (newStation < 9 && newStation > 0) {
+            newStation = newStation + 1;
+        }
+        return newStation;
+    }
+
+    public int prevStation() {
+        int prevNewStation = 0;
+        if (prevNewStation == 0) {
+            prevNewStation = 9;
+            if (prevNewStation > 0 && prevNewStation <= 9) ;
+            prevNewStation = prevNewStation - 1;
+        }
+        return prevNewStation;
+    }
 }

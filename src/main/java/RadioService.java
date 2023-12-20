@@ -1,3 +1,5 @@
+import javax.imageio.plugins.jpeg.JPEGImageReadParam;
+
 public class RadioService {
     public int increaseVolume() {
         int increaseRealVolume = 0;
@@ -18,6 +20,19 @@ public class RadioService {
         if (newStation > 9){
             newStation = 0;
         }
-        if ()
+        if (newStation <9 && newStation > 0){
+            newStation = newStation + 1;
+        }
+        return newStation;
     }
+    public int prevStation(){
+        int prevNewStation = 0;
+        if (prevNewStation == 0){
+            prevNewStation = 9;
+            if (prevNewStation > 0 && prevNewStation <= 9 );
+            prevNewStation = prevNewStation - 1;
+                    }
+        return prevNewStation;
+    }
+
 }
