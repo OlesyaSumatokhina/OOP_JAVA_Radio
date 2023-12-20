@@ -61,8 +61,8 @@ public class RadioTest {
         Radio service = new Radio();
         Radio radioVolume = new Radio();
         radioVolume.setrealSoundVolume(15);
-        int expected = 16;
-        int actual = service.increaseVolume();
+     int expected = 16;
+     int actual = service.increaseVolume();
         Assertions.assertEquals(expected, actual);
     }
 }
